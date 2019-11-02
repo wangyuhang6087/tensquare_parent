@@ -1,0 +1,17 @@
+# 端口
+# jdbc地址
+#　关于jpa的设置
+server:
+  port: 9001
+spring:
+  application:
+    name: tensquare-base   #  服务名字,用于服务调用.不能写_ springcloud不识别
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.142.128:3306/tensquare_base?characterEncoding=utf-8
+    username: root
+    password: 1234
+  jpa:       #  SpringDataJPA的 配置
+    database: mysql
+    show-sql: true
+
